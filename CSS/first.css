@@ -1,0 +1,106 @@
+ body {
+     margin: 0;
+     padding: 0;
+     background-image: url('/images/image2.png');
+     /* Replace 'path/to/your/image.jpg' with the path to your image */
+     background-size: cover;
+     /* background-position: center; */
+     background-repeat: no-repeat;
+ }
+
+ .name {
+     /* text-align: center; */
+     margin-top: 300px;
+     margin-left: 400px;
+ }
+
+ .description {
+     margin-left: 500px;
+     font-family: "Times New Roman", Times, serif;
+ }
+
+ p {
+     font-size: 30px;
+ }
+
+ h2 {
+     font-size: 60px;
+ }
+
+ p,
+ h2,
+ h3 {
+     /* font-family: "Brush Script MT", cursive; */
+     font-family: Copperplate, Papyrus, fantasy;
+     line-height: 0.3;
+ }
+
+ h4 {
+     line-height: 1;
+     font-family: Copperplate, Papyrus, fantasy;
+ }
+
+ nav {
+     background-color: #333;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+ }
+
+ .menu {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
+
+ .menu li {
+     margin-right: 20px;
+ }
+
+ .menu li:last-child {
+     margin-right: 0;
+ }
+
+ .menu li a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ /* Hamburger Menu Styles */
+ .nav-toggle-label {
+     display: none;
+     cursor: pointer;
+ }
+
+ .nav-toggle-label span {
+     display: block;
+     width: 25px;
+     height: 3px;
+     background-color: #fff;
+     margin-bottom: 5px;
+ }
+
+ @media screen and (max-width: 768px) {
+     .menu {
+         display: none;
+         flex-direction: column;
+     }
+
+     .menu li {
+         margin-right: 0;
+         margin-bottom: 10px;
+     }
+
+     .nav-toggle-label {
+         display: block;
+     }
+
+     #nav-toggle:checked+.menu {
+         display: flex;
+     }
+ }
+
+ /* ........................................................... */
